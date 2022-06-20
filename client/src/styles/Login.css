@@ -1,0 +1,74 @@
+.box-1{
+    position:absolute;
+  
+    width:100%;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:20px 0px;
+    box-sizing:content-box;
+    margin-top: 40px;
+    
+    
+  }
+  .box-1 h1{
+    text-align:center;
+    margin:0px 0;
+    font-size:30px;
+    
+ 
+  }
+  .login{
+    background:rgba(0, 0, 0, 0.7);
+    /*background:rgba(0,0,0,0.13)*/
+  }
+  .vid-container{
+    position:relative;
+    height:120vh;
+    overflow:hidden;
+    background-image: url('./img/1.PNG');
+
+  }
+  .inner-container{
+    width:400px;
+    height:500px;
+    position:absolute;
+    top:calc(50vh - 300px);
+    left:calc(50vw - 200px);
+    overflow:hidden; 
+    
+  }
+  .Log{
+    display:block;
+    width:300px;
+    margin:20px auto;
+    padding:15px;
+    background:rgba(0,0,0,0.2);
+    color:#fff;
+    border:0;
+    position:relative;
+    font-family:'Exo 2', sans-serif;
+  }
+  
+ /* .box button{
+    background:#2ecc71;
+    border:0;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
+    width:330px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+  }
+  .box button:active{
+    background:#27ae60;
+  }*/
+  .box-1 p{
+    font-size:15px;
+    text-align:center;
+    padding-top: 20px;
+  }
+  .box-1 p span{
+    cursor:pointer;
+    color:#666;
+  }

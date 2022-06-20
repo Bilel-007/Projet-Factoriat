@@ -1,0 +1,226 @@
+/*.Process{
+    background-color: #1d1f20;
+    color: #e5e5e5;
+    font: 16px/1.25 'Raleway', sans-serif;
+}*/
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/*#wrapper {
+    margin-left: 10px;
+    margin-right:10px;
+  
+}*/
+
+#container-8 {
+    float: left;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+  
+}
+#container-8 h2{
+font-size: 18px;
+font-weight: 400;
+text-align: justify;
+padding-bottom: 14px;
+padding-top: 10px;
+}
+
+ul,
+ol {
+    margin: 1em 0;
+}
+
+ol.process-chart {
+    color: #000;
+    counter-reset: item;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0 1em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+ol.process-chart > li,
+ol.process-chart > li > div {
+    position: relative;
+}
+
+ol.process-chart > li {
+    background: linear-gradient(to right, rgba(0,0,0,0.25) 0%, transparent 25%);
+    background-color: #fff;
+    counter-increment: item;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 1em 1em 1em -1em;
+    min-width: 11.25em;
+    padding: 1em 1em 1em 2em;
+}
+
+ol.process-chart > li:before,
+ol.process-chart > li > div:before {
+    color: rgba(0,0,0,0.75);
+    text-transform: uppercase;
+}
+
+ol.process-chart > li:before {
+    content: 'ETAPE';
+    display: inline-block;
+    font-weight:bold;
+    left: 2em;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 3em;
+    transform: rotate(-90deg);
+    transform-origin: 25% 50%;
+}
+
+ol.process-chart > li:after {
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid #fff;
+    border-right: 0 solid transparent;
+    border-top: 1em solid transparent;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: -1em;
+    top: 0;
+    width: 0;
+    z-index: 1;
+}
+
+ol.process-chart > li > div {
+    padding: 0 0 0 2em;
+}
+
+ol.process-chart > li > div:before {
+    content: counter(item, decimal-leading-zero);
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/*** PRIMARY ***/
+ol.process-chart > li:nth-of-type(6n+1) {
+    background-color: gray;
+}
+
+ol.process-chart > li:nth-of-type(6n+1):after {
+    border-left-color: gray;
+}
+
+/*** SECONDARY ***/
+ol.process-chart > li:nth-of-type(6n+2) {
+    background-color: #ffc80a;
+}
+
+ol.process-chart > li:nth-of-type(6n+2):after {
+    border-left-color: #ffc80a;
+}
+
+/*** TERTIARY ***/
+ol.process-chart > li:nth-of-type(6n+3) {
+    background-color: white;
+}
+
+ol.process-chart > li:nth-of-type(6n+3):after {
+    border-left-color: white;
+}
+
+/*** QUATERNARY ***/
+ol.process-chart > li:nth-of-type(6n+4) {
+    background-color: gray;
+}
+
+ol.process-chart > li:nth-of-type(6n+4):after {
+    border-left-color:gray;
+}
+
+/*** QUINARY ***/
+ol.process-chart > li:nth-of-type(6n+5) {
+    background-color: #ffc80a;
+}
+
+ol.process-chart > li:nth-of-type(6n+5):after {
+    border-left-color: #ffc80a;
+}
+ol.process-chart > li:nth-of-type(6n+6) {
+    background-color: white;
+}
+
+ol.process-chart > li:nth-of-type(6n+6):after {
+    border-left-color: white;
+}
+
+/*** MEDIA QUERIES ***/
+@media only screen and ( max-width: 40em ) {
+
+    ol.process-chart {
+        margin: 1em 0 0 0;
+        padding: 1em 0 0 0;
+    }
+
+    ol.process-chart > li {
+        background: linear-gradient(rgba(0,0,0,0.25) 0%, transparent 25%);
+        flex-basis: inherit;
+        margin: -1em 0 1em 0;
+        min-width: inherit;
+        padding: 1em 1em 0 1em;
+    }
+
+    ol.process-chart > li:before {
+        left: 1em;
+        top: 2em;
+    }
+
+    ol.process-chart > li:after {
+        border-bottom: 0 solid transparent;
+        border-left: 1em solid transparent!important;
+        border-right: 1em solid transparent;
+        border-top: 1em solid #fff;
+        bottom: -1em;
+        height: 0;
+        left: 0;
+        right: inherit;
+        top: inherit;
+        width: 100%;
+    }
+
+    ol.process-chart > li > div {
+        padding: 1em 1em 0 1em;
+    }
+
+    /*** PRIMARY ***/
+    ol.process-chart > li:nth-of-type(6n+1):after {
+        border-top-color: gray;
+    }
+
+    /*** SECONDARY ***/
+    ol.process-chart > li:nth-of-type(6n+2):after {
+        border-top-color:  #ffc80a;
+    }
+
+    /*** TERTIARY ***/
+    ol.process-chart > li:nth-of-type(6n+3):after {
+        border-top-color: white;
+    }
+
+    /*** QUATERNARY ***/
+    ol.process-chart > li:nth-of-type(6n+4):after {
+        border-top-color: gray;
+    }
+
+    /*** QUINARY ***/
+    ol.process-chart > li:nth-of-type(6n+5):after {
+        border-top-color: #ffc80a;
+    }
+    ol.process-chart > li:nth-of-type(6n+6):after {
+        border-top-color: white;
+    }
+}

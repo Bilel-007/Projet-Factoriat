@@ -1,0 +1,18 @@
+.addp{
+    margin-bottom:2rem;
+    color:white;
+    padding-right:50px
+
+}
+.put{
+    margin-left: 5px;
+}
+.bag{
+    background-image: url('./img/dashboard.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+   
+
+
+}
+

@@ -1,0 +1,34 @@
+
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    color:white;
+    text-align: justify;
+    
+}
+
+.col-md-4{
+    padding-top: 20px;
+
+}
+.mt-3  {
+    text-align: center;
+}
+.colortitle {
+    color:#ffc80a
+    
+}
+.colortext {
+    color:black;
+    font-weight:900;
+    font-size: 14px;
+}
+.text-truncate{
+    font-size: 22px;
+}

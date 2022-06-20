@@ -1,0 +1,176 @@
+/*body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }*/
+
+
+  .fa-building-user,.fa-file-shield, .fa-screwdriver-wrench, .fa-people-arrows-left-right, .fa-earth-africa, .fa-award, .fa-arrows-to-dot,.fa-hand-holding-dollar{
+    color: #ffc80a;
+    font-size: 30px;
+}
+.about-us{
+  color:black;
+  line-height: 2;
+  font-size: 16px;
+  margin-right: 100px;
+
+}
+  
+  .showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/Groupe-Tech.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+  
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  
+  .showcase:hover .content-1 {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  .home {
+    color:black;
+  }
+  
+  .content-1 {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 40%;
+    margin-top: 105px;
+    margin-left: -200px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+    color: white;
+  }
+  
+  .content-1 .logo {
+    height: 180px;
+    width: 180px;
+    margin-left: 200px;
+  }
+  .logo2{
+      height:200px;
+      width:200px;
+  }
+  
+  .content-1 .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    width: 650px;
+    
+
+  }
+  
+  .content-1 .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+    width: 650px;
+
+
+
+  }
+  
+  .container-1 {
+    max-width: 1200;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-ligh {
+    background-color:rgb(244, 244, 244);
+    color: #333;
+    text-align: justify;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #f4f4f4;
+  }
+  
+  footer {
+    padding: 2.2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Small Screens */
+  @media (max-width: 1200px) {
+    .showcase::after {
+      height: 50vh;
+    }
+  
+    .content-1 {
+      top: 5%;
+      margin-top: 5px;
+    }
+  
+    .content-1 .logo {
+      height: 140px;
+      width: 140px;
+    }
+  
+    .content-1 .text {
+      display: none;
+    }
+  
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .services div {
+      border-bottom: #333 dashed 1px;
+      
+      padding: 1.2rem 1rem;
+    }
+  }
+  
+  /* Landscape */
+  @media (max-height: 500px) {
+    .content-1 .title,
+    .content-1 .text {
+      display: none;
+    }
+  
+    .content-1 {
+      top: 0;
+    }
+  }
+  
